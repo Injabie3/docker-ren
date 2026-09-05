@@ -1,4 +1,4 @@
-![image](https://github.com/xXJadeRabbitXx/docker-ren/blob/main/banner.png)
+![image](banner.png)
 
 Because SFU Ani's Renbot needs additional libraries we need to extend the existing image
 
