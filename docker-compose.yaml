@@ -1,15 +1,7 @@
-version: "3.9"
-
-networks:
-  ren-network:
-    name: ren-network
-    driver: bridge
-
 services:
   ren:
     build:
       context: .
-    container_name: ren
     restart: unless-stopped
     networks:
       - ren-network
@@ -24,3 +16,6 @@ services:
       - PUID=1000
       - CUSTOM_REDBOT_PACKAGE=git+https://github.com/SFUAnime/Ren.git@V3/testing
       - EXTRA_ARGS=${EXTRA_ARGS}
+networks:
+  ren-network:
+    driver: bridge
